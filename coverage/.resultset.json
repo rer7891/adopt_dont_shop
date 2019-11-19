@@ -182,10 +182,34 @@
         1,
         null,
         1,
+        1,
         null
       ],
       "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/spec/features/shelters/user_can_see_shelter_address_by_id_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/app/models/shelter.rb": [
@@ -202,6 +226,9 @@
         1,
         1,
         null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/app/controllers/application_controller.rb": [
@@ -210,6 +237,6 @@
         null
       ]
     },
-    "timestamp": 1574203319
+    "timestamp": 1574206496
   }
 }
