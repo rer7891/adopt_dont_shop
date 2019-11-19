@@ -1,4 +1,4 @@
-class SheltersControllers < ApplicationController
+class SheltersController < ApplicationController
   def index
-  end 
+  end
 end

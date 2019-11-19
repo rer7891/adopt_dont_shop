@@ -1,0 +1,52 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/environment.rb": [
+        null,
+        1,
+        null,
+        null,
+        0
+      ],
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/application.rb": [
+        1,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/boot.rb": [
+        1,
+        null,
+        1
+      ]
+    },
+    "timestamp": 1574199926
+  }
+}
