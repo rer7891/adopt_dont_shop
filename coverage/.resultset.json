@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/environment.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/application.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/application.rb": [
         1,
         null,
         1,
@@ -41,12 +41,12 @@
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/boot.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/environments/test.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/environments/test.rb": [
         1,
         null,
         null,
@@ -90,7 +90,7 @@
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/initializers/application_controller_renderer.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -100,7 +100,7 @@
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/initializers/assets.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -116,7 +116,7 @@
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/initializers/backtrace_silencers.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -125,20 +125,20 @@
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/initializers/cookies_serializer.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/initializers/cookies_serializer.rb": [
         null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/initializers/inflections.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -156,13 +156,13 @@
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/initializers/mime_types.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/initializers/wrap_parameters.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -178,38 +178,39 @@
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/config/routes.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/config/routes.rb": [
         1,
         null,
         1,
-        null
-      ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/app/models/shelter.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/app/models/application_record.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/app/models/shelter.rb": [
+        1,
+        null
+      ],
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/app/controllers/shelters_controller.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/app/controllers/shelters_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/beckyrobran/turing/mod2/projects/adopt_dont_shop/app/controllers/application_controller.rb": [
+      "/Users/beckyrobran/turing/mod2/adopt_dont_shop/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ]
     },
-    "timestamp": 1574203319
+    "timestamp": 1574257882
   }
 }
