@@ -1,6 +1,7 @@
 <div>
-<a href="/shelters"> Shelter Index </a>
+<%= link_to "Shelter Index", "/shelters" %>
 <p> Shelter Id: <%= @shelter.id %> </p>
+<%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit" %>
 </div>
 
 <div>
