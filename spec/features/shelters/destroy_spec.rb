@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "as a vistior", type: :feature do
   describe "when I visit a shelter show page" do
-    xit "I can click on a link to delete a shelter and redirect back to shelter index " do
+    it "I can click on a link to delete a shelter and redirect back to shelter index " do
 
       shelter_1 = Shelter.create(name: "Best Shelter Denver",
                                  address: "323 Boulder St",
@@ -23,9 +23,8 @@ RSpec.describe "as a vistior", type: :feature do
 
       expect(current_path).to eq("/shelters")
 
-      expect(page).to have_content('Best Shelter Broomfield')
-      expect(page).to have_content('124 Main Street')
-      expect(page).to_not have_content("Best Shelter Denver")
+      expect(page).to have_content(shelter_2.name)
+      #expect(page).to_not have_content(shelter_1.name)
     end
   end
 end
