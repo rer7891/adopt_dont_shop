@@ -22,12 +22,4 @@ RSpec.describe "shelters index page", type: :feature do
     expect(page).to have_link("Boulder Shelter Adopt")
   end
 
-  # describe "has links that work" do
-  #   shelter_1 = Shelter.create(name: "Best Shelter Denver")
-  #   shelter_2 = Shelter.create(name: "Boulder Shelter Adopt")
-  #   subject {shelters}
-  #   before { visit show }
-  #     it { should have_link("Best Shelter Denver", href: show/["#{shelter_1.id}"]) }
-  #     it { should have_link("Boulder Shelter Adopt", href: show/["#{shelter_2.id}"]) }
-  # end
 end
