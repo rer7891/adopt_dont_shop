@@ -27,8 +27,8 @@ RSpec.describe "As a visitor", type: :feature do
       click_on 'Update Shelter'
 
       expect(current_path).to eq("/shelters/#{shelter.id}")
-      expect(page).to have_content('Puppies are Best')
-      expect(page).to have_content('12 Main Street')
+      expect(page).to have_content("Puppies are Best")
+      expect(page).to have_content("12 Main Street")
       expect(page).to_not have_content("Best Shelter Broomfield")
     end
   end

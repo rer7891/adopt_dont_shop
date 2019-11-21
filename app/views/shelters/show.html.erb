@@ -2,6 +2,7 @@
 <%= link_to "Shelter Index", "/shelters" %>
 <p> Shelter Id: <%= @shelter.id %> </p>
 <%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit" %>
+<%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
 </div>
 
 <div>
