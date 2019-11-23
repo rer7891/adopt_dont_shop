@@ -1,0 +1,11 @@
+
+<h1>  Pets In Shelter </h1>
+<ul>
+<% @pet_by_id.each do |pet| %>
+       <%= image_tag("#{pet.image}", {:style => "width:100px;"}) %> <br>
+      <%= pet.name %> <br>
+      <%= pet.age %> <br>
+     <%=  pet.sex %> <br>
+      <%= pet.shelter.name %> <br>
+<% end %>
+</ul>

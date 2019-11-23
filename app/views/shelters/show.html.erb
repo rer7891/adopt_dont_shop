@@ -5,10 +5,14 @@
 <%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
 </ul>
 
+<p>
+<%= link_to "See All Pets In Shelter", "/shelters/#{@shelter.id}/pets" %>
+</p>
+
 <ul >
 <li> <%= @shelter.name %> </li>
 <li> <%= @shelter.address %> </li>
-<li> <%=@shelter.city %>,
+<li> <%=@shelter.city %>
  <%=@shelter.state %>
  <%=@shelter.zip %> </li>
 </ul>
