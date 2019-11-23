@@ -16,9 +16,27 @@ pet_1 = Pet.create(image:"https://placekitten.com/200/300",
                        name: "Fluffy",
                        age: 2,
                        sex: "female",
-                       shelter: shelter_1)
+                       shelter: shelter_1,
+                       description: "Fluffy is cute and cuddly. She needs a forever home
+                        and would do well with children and other animals.")
 pet_2 = Pet.create(image:"https://picsum.photos/id/237/200/300",
                       name: "Tootsy",
                       age: 2,
                       sex: "male",
-                      shelter: shelter_2)
+                      shelter: shelter_2,
+                      description: "Tootsy is house broken and knows how to sit! He needs a forever home
+                       and would do well with children and other animals.")
+pet_3 = Pet.create(image:"https://picsum.photos/id/1025/4951/3301",
+                        name: "Turquoise",
+                        age: 6,
+                        sex: "female",
+                        shelter: shelter_1,
+                        description: "Turquoise is shy but sweet. She needs a forever home
+                         preferably with a quiet older family.")
+pet_4 = Pet.create(image:"https://picsum.photos/id/1074/5472/3648",
+                      name: "Butters",
+                      age: 5,
+                      sex: "male",
+                      shelter: shelter_2,
+                      description: "Butters outgoing . She needs a forever home
+                       and would do well with children and other animals.")
