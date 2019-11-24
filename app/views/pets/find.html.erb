@@ -1,11 +1,12 @@
 
 <h1>  Pets In Shelter </h1>
-<ul>
+
 <% @pet_by_id.each do |pet| %>
       <%= image_tag("#{pet.image}", {:style => "width:100px;"}) %> <br>
       <%=link_to pet.name, "/pets/#{pet.id}" %> <br>
       <%= pet.age %> <br>
      <%=  pet.sex %> <br>
-      <%= pet.shelter.name %> <br>
+      <%= pet.shelter.name %> 
 <% end %>
-</ul>
+
+<%=link_to "Add A New Pet", "/shelters/#{@pet_by_id.first.shelter.id}/pets/new" %>
