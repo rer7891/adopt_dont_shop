@@ -1,11 +1,8 @@
+ <%= image_tag("#{@pet.image}", {:style => "width:100px;"}) %> </br>
+ <%= @pet.name%> </br>
+ <%=@pet.description %> </br>
+ <%=@pet.age %> </br>
+ <%=@pet.sex %> </br>
+<%=@pet.status %> </br>
 
-
-<ul >
-
- <%= image_tag("#{@pets.image}", {:style => "width:100px;"}) %> </br>
- <%= @pets.name%> </br>
- <%=@pets.description %> </br>
- <%=@pets.age %> </br>
- <%=@pets.sex %> </br>
-<%=@pets.status %> </br>
-</ul>
+<%=link_to "Update Pet Info", "/pets/#{@pet.id}/edit" %>
