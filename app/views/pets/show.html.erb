@@ -3,6 +3,7 @@
  <%=@pet.description %> </br>
  <%=@pet.age %> </br>
  <%=@pet.sex %> </br>
-<%=@pet.status %> </br>
+<%=@pet.status %>
 
 <%=link_to "Update Pet Info", "/pets/#{@pet.id}/edit" %>
+<%=link_to "Delete This Pet", "/pets/#{@pet.id}", method: :delete %>
