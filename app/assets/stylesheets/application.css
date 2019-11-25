@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+/* { dispaly: flex; flex-direction: row; align-items: center; background: deepskyblue;
+                   height: 60px; padding: 10px; color: white; text-indent: 10px; font-size: 20px; } */
+
+.shelter_header  {background-color: rgb(156, 30, 20); color: white; padding: 30px; }
+                  .shelterlink {float: left; width: 70%; }
+                  .petlink {float: right; width: 20%;  }
+.shelterpicture {float: center; padding: 10px; height: 350px;}
+.shelterbody {float: right; width: 100%; color: gray;  }
+.newshelter {float: right; width: 100%; color: gray;}
