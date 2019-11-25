@@ -22,3 +22,5 @@
 .shelterpicture {float: center; padding: 10px; height: 350px;}
 .shelterbody {float: right; width: 100%; color: gray;  }
 .newshelter {float: right; width: 100%; color: gray;}
+.update {float: right; width: 90%; color: gray; padding: 30px; line-height: 20px;}
+.new {float: right; width: 90%; color: gray; padding: 30px; line-height: 20px;}
