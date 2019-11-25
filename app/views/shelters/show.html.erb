@@ -1,18 +1,17 @@
-<ul>
-<%= link_to "Shelter Index", "/shelters" %>
-<p> Shelter Id: <%= @shelter.id %> </p>
-<%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit" %>
-<%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
-</ul>
+<section>
+  <div> Shelter Id: <%= @shelter.id %> </div>
+  <p> <%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit" %> </p>
+  <p> <%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %> </p>
+</section>
 
-<p>
-<%= link_to "See All Pets In Shelter", "/shelters/#{@shelter.id}/pets" %>
-</p>
+<section>
+  <p> <%= link_to "See All Pets In Shelter", "/shelters/#{@shelter.id}/pets" %> </p>
+</section>
 
-<ul >
-<li> <%= @shelter.name %> </li>
-<li> <%= @shelter.address %> </li>
-<li> <%=@shelter.city %>
- <%=@shelter.state %>
- <%=@shelter.zip %> </li>
-</ul>
+<section>
+  <p> <%= @shelter.name %> </p>
+  <p> <%= @shelter.address %> </p>
+  <p> <%=@shelter.city %> </p>
+  <p> <%=@shelter.state %> </p>
+  <p> <%=@shelter.zip %> </p>
+</section>
