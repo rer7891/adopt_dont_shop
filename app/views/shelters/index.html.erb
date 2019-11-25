@@ -1,6 +1,17 @@
-<h1> All Shelters </h1>
+<section class=shelterpicture>
+  <%= image_tag("https://www.cityofgp.com/sites/default/files/styles/inner_banner/public/uploads/banners/animals-pets-banner.jpg?itok=5lIml3cX", {:style => "width:100%; height: 90%;" }) %>
+</section>
 
-<%= link_to "Add A New Shelter", "/shelters/new" %>
-<% @shelters.each do |shelter| %>
-  <h2> <%= link_to shelter.name, "/shelters/#{shelter.id}" %></h2>
-<% end %>
+<section class=shelterbody>
+  <% @shelters.each do |shelter| %>
+    <h2> <%= link_to shelter.name, "/shelters/#{shelter.id}", {:style=> 'color: gray;'} %></h2>
+    <ul>
+      <li> <%= link_to "Update Shelter", "/shelters/#{shelter.id}/edit", {:style=> 'color: gray;'}%> </li>
+      <li id="<%="#{shelter.id}"%>"> <%= link_to "Delete Shelter", "/shelters/#{shelter.id}", style: 'color: gray', method: :delete %> </p>
+    </ul>
+  <% end %>
+</section>
+
+<section class=newshelter>
+  <div id=right ><%= link_to "Add A New Shelter", "/shelters/new", {:style=> 'color: gray;'} %> </div>
+</section>
