@@ -29,7 +29,7 @@ RSpec.describe "shelters index page", type: :feature do
     expect(page).to have_link("Boulder Shelter Adopt")
   end
 
-  it "has a link to edit or delete each shelter" do
+  it "has a link to edit or delete a shelter " do
 
     visit "/shelters"
     find("a[href='/shelters/#{@shelter_1.id}/edit']").click
