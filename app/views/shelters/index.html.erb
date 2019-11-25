@@ -6,8 +6,8 @@
   <% @shelters.each do |shelter| %>
     <h2> <%= link_to shelter.name, "/shelters/#{shelter.id}", {:style=> 'color: gray;'} %></h2>
     <ul>
-      <li> <%= link_to "Update Shelter", "/shelters/#{shelter.id}/edit", {:style=> 'color: gray;'}%> </li>
-      <li id="<%="#{shelter.id}"%>"> <%= link_to "Delete Shelter", "/shelters/#{shelter.id}", style: 'color: gray', method: :delete %> </p>
+      <li><%= link_to "Update Shelter", "/shelters/#{shelter.id}/edit", style: 'color: gray'%> </li>
+      <li id="<%="#{shelter.id}"%>"> <%= link_to "Delete Shelter", "/shelters/#{shelter.id}", style: 'color: gray', method: :delete %> </li>
     </ul>
   <% end %>
 </section>
