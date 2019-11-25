@@ -1,12 +1,15 @@
 
 <h1>  Pets In Shelter </h1>
+<p><%= "This shelter has #{@pet_by_id.first.shelter.counts(@pet_by_id.first.shelter.id)} pets up for adoption."%> </p>
 
 <% @pet_by_id.each do |pet| %>
-      <%= image_tag("#{pet.image}", {:style => "width:100px;"}) %> <br>
-      <%=link_to pet.name, "/pets/#{pet.id}" %> <br>
-      <%= pet.age %> <br>
-     <%=  pet.sex %> <br>
-      <%= pet.shelter.name %> 
+    <p>  <%= image_tag("#{pet.image}", {:style => "width:100px;"}) %> </p>
+    <p>  <%=link_to pet.name, "/pets/#{pet.id}" %> </p>
+    <p>  <%= pet.age %> </p>
+    <p> <%=  pet.sex %> </p>
+    <p> <%=link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter.id}" %> <p/>
+    <p id=<%="#{pet.id}"%>> <%=link_to "Update Pet Info", "/pets/#{pet.id}/edit" %> </p>
+    <p id=<%="#{pet.id}"%>> <%=link_to "Delete This Pet", "/pets/#{pet.id}", method: :delete %> </p>
 <% end %>
 
 <%=link_to "Add A New Pet", "/shelters/#{@pet_by_id.first.shelter.id}/pets/new" %>
