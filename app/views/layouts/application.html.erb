@@ -9,6 +9,10 @@
   </head>
 
   <body>
+    <div class=shelter_header>
+      <div class=shelterlink> <%= link_to "Denver Area Shelters", "/shelters", {:style=> 'color: white;'}%> </div>
+      <div class=petlink> <%= link_to "Pets Currently Sheltered", "/pets", {:style=> 'color: white;'} %> </div>
+    </div>
     <%= yield %>
   </body>
 </html>

@@ -1,11 +1,11 @@
 class PetsController < ApplicationController
 
   def index
-    @pets = Pet.all
+    @pets = Pet.all.order(status: :asc)
   end
 
   def find
-    @pet_by_id = Pet.where(shelter_id: params[:shelter_id]).order(created_at: :desc)
+    @pet_by_id = Pet.where(shelter_id: params[:shelter_id]).order(status: :asc)
   end
 
   def show

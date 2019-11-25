@@ -24,7 +24,7 @@ RSpec.describe "As a visitor", type: :feature do
       fill_in 'Name', with: "Felix"
       fill_in 'Description', with: "Felix is wonderful."
       fill_in 'Age', with: 6
-      fill_in 'Sex', with: "Female"
+    
       click_on 'Update Pet Details'
 
       expect(current_path).to eq("/pets/#{pet.id}")

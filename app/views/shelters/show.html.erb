@@ -1,18 +1,20 @@
-<ul>
-<%= link_to "Shelter Index", "/shelters" %>
-<p> Shelter Id: <%= @shelter.id %> </p>
-<%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit" %>
-<%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
-</ul>
 
-<p>
-<%= link_to "See All Pets In Shelter", "/shelters/#{@shelter.id}/pets" %>
-</p>
 
-<ul >
-<li> <%= @shelter.name %> </li>
-<li> <%= @shelter.address %> </li>
-<li> <%=@shelter.city %>
- <%=@shelter.state %>
- <%=@shelter.zip %> </li>
-</ul>
+<section>
+  <h3> <%= @shelter.name %> </h3>
+  <ul>
+   <li> <%= @shelter.address %> </li>
+   <li> <%=@shelter.city %> </li>
+   <li> <%=@shelter.state %> </li>
+   <li> <%=@shelter.zip %> </li>
+   <li> Shelter Id: <%= @shelter.id %> </li>
+  </ul>
+</section>
+
+<section>
+
+  <p> <%= link_to "See All Pets In Shelter", "/shelters/#{@shelter.id}/pets", {:style=> 'color: gray;'}  %> </p>
+  <p> <%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit", {:style=> 'color: gray;'}  %> </p>
+  <p> <%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", style: 'color: gray', method: :delete %> </p>
+
+</section>
