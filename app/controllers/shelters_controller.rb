@@ -26,8 +26,17 @@ class SheltersController < ApplicationController
   end
 
   def destroy
+  if Pet.count > 0
+
+    pet_by_id = Pet.where(shelter_id: params[:id])
+    pet_by_id.destroy_all
+
     Shelter.destroy(params[:id])
+  else
+    Shelter.destroy(params[:id])
+  end
     redirect_to '/shelters'
+
   end
 
   private
