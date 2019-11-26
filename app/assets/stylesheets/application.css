@@ -28,5 +28,10 @@
 
 .sitebody {background-color: rgb(51, 51, 51); color: white;}
 
-.petdetails {float: right; width: 70%;  height: 350px; }
-.petimage {float: left; width: 30%; height: 350px;}
+
+.petdetails {float: right; width: 70%; padding: 10px; height: 350px; }
+.petimage {float: left; width: 25%; padding: 10px; height: 350px; }
+
+.column_1 {float: left; width: 30%; height: 70px; }
+.column_2 {float: right; width: 70%; height: 70px; }
+.sheltername {float: left;  width: 90%;}
