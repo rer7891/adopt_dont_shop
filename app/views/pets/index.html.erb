@@ -1,13 +1,17 @@
 <h1> All Pets In Shelters </h1>
 
-
 <% @pets.each do |pet| %>
-       <%= image_tag("#{pet.image}", {:style => "width:100px;"}) %>
-  <h2> <%= link_to pet.name, "/pets/#{pet.id}/" %></h2>
-  <p>  <%= pet.age %> </p>
-  <p>  <%=  pet.sex %> </p>
-  <p>  <%= pet.shelter.name %> </p>
-  <p> <%=link_to "Update Pet Info", "/pets/#{pet.id}/edit" %> </p>
-  <p> <%=link_to "Delete This Pet", "/pets/#{pet.id}", method: :delete %> </p>
+  <section class=petimage>
+    <%= image_tag("#{pet.image}", {:style => "width:95%; height: 250px;"}) %>
+    <p> <%=link_to "Update Pet Info", "/pets/#{pet.id}/edit", style: 'color: white' %> </p>
+    <p> <%=link_to "Delete This Pet", "/pets/#{pet.id}", style: 'color: white', method: :delete %> </p>
+  </section>
+  <section class=petdetails>
+    <p> Name: <%= link_to pet.name, "/pets/#{pet.id}/", style: 'color: white' %></p>
+    <p> Age: <%= pet.age %> </p>
+    <p> Gender: <%=  pet.sex %> </p>
+    <p> Shelter Name: <%= link_to pet.shelter.name, "/shelters/#{pet.shelter.id}", style: "color: white;" %></p>
+  </section>
+
 
 <% end %>
