@@ -1,15 +1,22 @@
-
-<h1>  Pets In Shelter </h1>
-<p><%= "This shelter has #{@pet_by_id.first.shelter.counts(@pet_by_id.first.shelter.id)} pets up for adoption."%> </p>
+<h1>  Pets In <%= @shelter.name%> </h1>
+<h3><%= "This shelter has #{@shelter.counts(@shelter.id)} pets up for adoption."%> </h3>
+<%=link_to "All Pets with a status of Adoptable", "/pets?adoptable=true", style: "color: white" %>
 
 <% @pet_by_id.each do |pet| %>
-    <p>  <%= image_tag("#{pet.image}", {:style => "width:100px;"}) %> </p>
-    <p>  <%=link_to pet.name, "/pets/#{pet.id}" %> </p>
-    <p>  <%= pet.age %> </p>
-    <p> <%=  pet.sex %> </p>
-    <p> <%=link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter.id}" %> <p/>
-    <p id=<%="#{pet.id}"%>> <%=link_to "Update Pet Info", "/pets/#{pet.id}/edit" %> </p>
-    <p id=<%="#{pet.id}"%>> <%=link_to "Delete This Pet", "/pets/#{pet.id}", method: :delete %> </p>
+  <section class=petimage>
+    <p>  <%= image_tag("#{pet.image}", {:style => "width:95%; height: 250px;"}) %> </p>
+    <p id=<%="#{pet.id}"%>> <%=link_to "Update Pet Info", "/pets/#{pet.id}/edit", style: 'color: white' %> </p>
+    <p id=<%="#{pet.id}"%>> <%=link_to "Delete This Pet", "/pets/#{pet.id}", style: 'color: white', method: :delete %> </p>
+  </section>
+  <section class=petdetails>
+    <p>  <%=link_to pet.name, "/pets/#{pet.id}", style: 'color: white' %> </p>
+    <p>  Age: <%= pet.age %> </p>
+    <p> Gender: <%=  pet.sex %> </p>
+    <p> Shelter Name: <%=link_to "#{@shelter.name}", "/shelters/#{@shelter.id}", style: 'color: white' %> <p/>
+
+  </section>
 <% end %>
 
-<%=link_to "Add A New Pet", "/shelters/#{@pet_by_id.first.shelter.id}/pets/new" %>
+<section class=new>
+  <%=link_to "Add A New Pet", "/shelters/#{@shelter.id}/pets/new", style: 'color: white' %>
+</section>
