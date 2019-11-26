@@ -16,11 +16,17 @@
 /* { dispaly: flex; flex-direction: row; align-items: center; background: deepskyblue;
                    height: 60px; padding: 10px; color: white; text-indent: 10px; font-size: 20px; } */
 
-.shelter_header  {background-color: rgb(156, 30, 20); color: white; padding: 30px; }
+.shelter_header  {background-color: rgb(156, 30, 20); color: white; padding: 40px;  }
                   .shelterlink {float: left; width: 70%; }
                   .petlink {float: right; width: 20%;  }
-.shelterpicture {float: center; padding: 10px; height: 350px;}
-.shelterbody {float: right; width: 100%; color: gray;  }
-.newshelter {float: right; width: 100%; color: gray;}
-.update {float: right; width: 90%; color: gray; padding: 30px; line-height: 20px;}
-.new {float: right; width: 90%; color: gray; padding: 30px; line-height: 20px;}
+
+.shelterpicture {float: center; padding: 10px;}
+.shelterbody {float: right; width: 95%; color: gray; }
+
+.update {float: right; width: 90%; color: white; padding: 30px; line-height: 25px;}
+.new {float: right; width: 90%; color: white; padding: 30px; line-height: 25px;}
+
+.sitebody {background-color: rgb(51, 51, 51); color: white;}
+
+.petdetails {float: right; width: 70%;  height: 350px; }
+.petimage {float: left; width: 30%; height: 350px;}

@@ -8,10 +8,10 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
+  <body class=sitebody>
     <div class=shelter_header>
       <div class=shelterlink> <%= link_to "Denver Area Shelters", "/shelters", {:style=> 'color: white;'}%> </div>
-      <div class=petlink> <%= link_to "Pets Currently Sheltered", "/pets", {:style=> 'color: white;'} %> </div>
+      <div class=petlink> <%= link_to "View Pets", "/pets", {:style=> 'color: white;'} %> </div>
     </div>
     <%= yield %>
   </body>

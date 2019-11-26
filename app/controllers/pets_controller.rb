@@ -6,6 +6,7 @@ class PetsController < ApplicationController
 
   def find
     @pet_by_id = Pet.where(shelter_id: params[:shelter_id]).order(status: :asc)
+    @shelter = Shelter.find(params[:shelter_id])
   end
 
   def show

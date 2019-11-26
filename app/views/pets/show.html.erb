@@ -1,10 +1,10 @@
  <p> <%= image_tag("#{@pet.image}", {:style => "width:100px;"}) %> </p>
- <p> <%= @pet.name%> </p>
+ <h2> This is <%= @pet.name%>. </h2>
  <p> <%=@pet.description %> </p>
- <p> <%=@pet.age %> </p>
- <p> <%=@pet.sex %> </p>
- <p> <%=@pet.status %> </p>
+ <p> Age: <%=@pet.age %> years old. </p>
+ <p> <%= @pet.name%>'s gender is <%=@pet.sex %>. </p>
+ <p> Adoption status: <%=@pet.status %> </p> </br>
 
-<p> <%=link_to "Update Pet Info", "/pets/#{@pet.id}/edit" %> </p>
-<p> <%=link_to "Delete This Pet", "/pets/#{@pet.id}", method: :delete %> </p>
-<p> <%=link_to "Back to #{@pet.shelter.name}", "/shelters/#{@pet.shelter.id}/pets" %> </p>
+<p> <%=link_to "Update Pet Info", "/pets/#{@pet.id}/edit", style: 'color: white' %> </p>
+<p> <%=link_to "Delete This Pet", "/pets/#{@pet.id}", style: 'color: white', method: :delete %> </p>
+<p> <%=link_to "Back to #{@pet.shelter.name}", "/shelters/#{@pet.shelter.id}/pets", style: 'color: white' %> </p>
