@@ -16,5 +16,4 @@
   <p> <%= link_to "See All Pets In Shelter", "/shelters/#{@shelter.id}/pets", {:style=> 'color: white;'}  %> </p>
   <p> <%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit", {:style=> 'color: white;'}  %> </p>
   <p> <%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", style: 'color: white', method: :delete %> </p>
- <%=link_to "Add A New Pet", "/shelters/#{@shelter.id}/pets/new", style: 'color: white' %>
 </section>
