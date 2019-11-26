@@ -1,7 +1,16 @@
-<h1>  Pets In <%= @shelter.name%> </h1>
-<h3><%= "This shelter has #{@shelter.counts(@shelter.id)} pets up for adoption."%> </h3>
-<%=link_to "All Pets with a status of Adoptable", "/pets?adoptable=true", style: "color: white" %>
-
+<section class=sheltername>
+  <h2>  Pets In <%= @shelter.name%> </h2>
+</section>
+<section>
+  <section class=column_1>
+    <h3><%= "This shelter has #{@shelter.counts(@shelter.id)} pets up for adoption."%> </h3>
+  </section>
+  <section class=column_2>
+     <p><%=link_to "Add A New Pet", "/shelters/#{@shelter.id}/pets/new", style: 'color: white' %> </p>
+  </section>
+</section>
+</br></br>
+<section class=petblock>
 <% @pet_by_id.each do |pet| %>
   <section class=petimage>
     <p>  <%= image_tag("#{pet.image}", {:style => "width:95%; height: 250px;"}) %> </p>
@@ -13,10 +22,6 @@
     <p>  Age: <%= pet.age %> </p>
     <p> Gender: <%=  pet.sex %> </p>
     <p> Shelter Name: <%=link_to "#{@shelter.name}", "/shelters/#{@shelter.id}", style: 'color: white' %> <p/>
-
   </section>
-<% end %>
-
-<section class=new>
-  <%=link_to "Add A New Pet", "/shelters/#{@shelter.id}/pets/new", style: 'color: white' %>
 </section>
+<% end %>
